@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        th, td {
+             border: 1px solid black;
+             
+             border-collapse: collapse;
+             padding: 10px;
+        }
+        </style>
+</head>
+<body>
+    <h1>Images in Tables</h1>
+    <hr>
+    <h2>What are your favorite pets ?</h2>
+    <table >
+        <thead>
+            <tr>
+                <th>Pet Image</th>
+                <th>More Facts about (as a Link)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><img src="https://yumove.co.uk/cdn/shop/articles/custom_resized_1b4597c0-5c8f-46d2-8df1-42c9396e63d4.jpg?v=1626947345" width="200px" height="150px"></td>
+                <td><a href='https://yumove.co.uk/cdn/shop/articles/custom_resized_1b4597c0-5c8f-46d2-8df1-42c9396e63d4.jpg?v=1626947345'>Horse</a></td>
+            </tr>
+            <tr>
+                <td><img src="https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=0.752xw:1.00xh;0.175xw,0&resize=1200:*" 
+                    width="200px" height="150px"></td>
+                <td><a href='https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=0.752xw:1.00xh;0.175xw,0&resize=1200:*'>Dogs</a></td>    
+            </tr>
+            <tr>
+                <td><img src="https://media.4-paws.org/5/b/4/b/5b4b5a91dd9443fa1785ee7fca66850e06dcc7f9/VIER%20PFOTEN_2019-12-13_209-2890x2000-1920x1329.jpg" 
+                width="200px" height="150px"></td>
+                <td><a href="https://media.4-paws.org/5/b/4/b/5b4b5a91dd9443fa1785ee7fca66850e06dcc7f9/VIER%20PFOTEN_2019-12-13_209-2890x2000-1920x1329.jpg">Cats</a></td>
+            </tr>
+
+        </tbody>
+    </table>
+    <hr>
+    <h2 style="text-align: center;">TIME TABLE </h2>
+    <table style="border-style: ridge; text-align: center; width: 50%;border-collapse: collapse; margin: auto;">
+        <thead>
+            <tr>
+                <th>Day/Period</th>
+                <th>I<br>9:30-10:20</th>
+                <th>II<br>10:20-11:10</th>
+                <th>III<br>11:10-12:00/th>
+                <th>12:00-12:40</th>
+                <th>IV<br>12:40-1:30</th>
+                <th>V<br>1:30-2:20</th>
+                <th>VI<br>2:20-3:10</th>
+                <th>VII<br>3:10-4:00</th>
+            </tr>
+        </thead>
+            <tr>
+                <th>Monday</th>
+                <td>Eng</td>
+                <td>Mat</td>
+                <td>Che</td>
+                <td rowspan="6">L<br>U<br>N<br>C<br>H</td>
+                <td colspan="3">LAB</td> 
+                <td>Phy</td>  
+            </tr>
+            <tr>
+                <th>Tuesday</th>
+                <td colspan="3">LAB</td>
+                <td>Eng</td>
+                <td>Che</td>
+                <td>Mat</td>
+                <td>SPORTS</td>
+            </tr>
+            <tr>
+                <th>Wednesday</th>
+                <td>Mat</td>
+                <td>Phy</td>
+                <td>Eng</td>
+                <td>Che</td>
+                <td colspan="3">LIBRARY</td>
+            </tr>
+            <tr>
+                <th>Thursday</th>
+                <td>Phy</td>
+                <td>Eng</td>
+                <td>Che</td>
+                <td colspan="3">LAB</td> 
+                <td>Mat</td>
+            </tr>
+            <tr>
+                <th>Friday</th>
+                <td colspan="3">LAB</td> 
+                <td>Mat</td>
+                <td>Che</td>
+                <td>Eng</td>
+                <td>Phy</td>
+            </tr>
+            <tr>
+                <th>Saturday</th>
+                <td>Eng</td>
+                <td>Che</td>
+                <td>Mat</td>
+                <td colspan="3">SEMINAR</td> 
+                <td>SPORTS</td>
+
+            </tr>
+        <tbody>
+            
+        </tbody>
+    </table>
+    <hr>
+    <p>Preceding Text </p>
+    <ol type="I">
+        <li>List Item 1
+            <ol type="a">
+                <li>Nested Item 1.1</li>
+                <li>Nested Item 1.2</li>
+            </ol>
+        </li>
+        <li>List Item 2
+            <ol type="1">
+                <li>Nested Item 1.1</li>
+                <li>Nested Item 1.2
+                    <ul style="list-style-type: circle;">
+                        <li>Nested Item 2.2.1</li>
+                        <li>Nested Item 2.2.2
+                            <ul style="list-style-type: square;">
+                                <li>Nested Item 2.2.2.1</li>
+                                <li>Nested Item 2.2.2.2</li>
+                            </ul>
+                        </li>
+                        <li>Nested Item 2.2.3</li>
+                    </ul>
+                </li>
+                <li>Nested Item 1.3</li>
+            </ol>
+        </li>
+        <li>List Item 3
+            <ul style="list-style-type:disc">
+                <li>Nested Item 3.1</li>
+                <li>Nested Item 3.2</li>
+                <li>Nested Item 3.3</li>
+            </ul>
+        </li>
+
+    </ol>
+    <hr>
+    <hr>
+    <h3>Registration Form</h3>
+    <div >
+    <form style="width: 25%; margin: auto; text-align: center;">
+        <fieldset style="background-color:beige">
+            <legend style="text-align: left;">Personal Details</legend>
+            <label for="fname">First name   </label>
+            <input type="text" id="fname" name="fname" value=""><br>
+            <br>
+            <label for="lname">Last name    </label>
+            <input type="text" id="lname" name="lname" value=""><br>
+            <br>
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" value=""><br>
+            <br>
+            <label for="gender">Gender      </label>
+            <input type="radio" id="male" name="gender" value="">
+            <label for="male">Male</label> 
+            <input type="radio" id="fmale" name="gender" value="">
+            <label for="fmale">Female</label><br>
+        </fieldset>
+    </form> 
+    <form style="width: 25%; margin: auto; text-align: center;">
+        <fieldset style="background-color:beige">
+            <legend style="text-align: left;">City</legend>
+            <label for="City">City</label>
+            <select id="city", name="city" >
+            <option>Amman</option>
+            <option selected>Irbid</option>
+            <option>Ajluon</option>
+            <option>Aqaba</option>
+            </select><br>
+        </fieldset>
+        <br>
+        <input style="margin: auto" type="submit" value="Subscribe">
+    </form>    
+    </div>
+    <hr>
+    <h2>Our First Form !</h2>
+    <form>
+        <fieldset style="border-style: dotted; width:30%">
+            <label for="uname">Username: </label>
+            <input type="text" id="uname" name="uname" >
+            <br>
+            <br>
+            <label for="pass">Password: </label>
+            <input type="password" id="pass" name="pass" >
+            <br>
+            <button>Login</button>
+        </fieldset>
+    </form>
+    <br><hr>
+    <h3>Registration Form !</h3>
+
+    <form >
+        <fieldset style="width: 50%;border-style: dotted">
+            <h4>Personal Details<h4>  
+            <hr>
+            <br>
+            <label for="finame">First name:  </label>
+            <input type="text" id="finame" name="finame" value=""><br>
+            <br>
+            <label for="laname">Last name:    </label>
+            <input type="text" id="laname" name="laname" value=""><br>
+            <br>
+            <label for="eemail">Email:</label>
+            <input type="email" id="eemail" name="eemail" value=""><br>
+            <br>
+            <label for="ggender">Gender      </label>
+            <input type="radio" id="mmale" name="ggender" value="">
+            <label for="mmale">Male</label> 
+            <input type="radio" id="female" name="ggender" value="">
+            <label for="female">Female</label><br>
+            <br>
+            <label for="Ciity">City</label>
+            <select id="ciity" name="city" >
+            <option>Amman</option>
+            <option selected>Irbid</option>
+            <option>Ajluon</option>
+            <option>Aqaba</option>
+            </select><br>
+            <br>
+            <button>Sign up</button>
+        </fieldset>
+    </form>    
+    
+
+
+</body>
+</html>
