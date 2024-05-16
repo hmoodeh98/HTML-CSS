@@ -38,21 +38,34 @@
         }
         .features {
             display: flex;
-            justify-content: space-around;
+            grid-template-columns: auto auto auto;
+            justify-content: space-between;
             margin-top: 20px;
             background-color: #222;
+            flex-wrap: wrap;
         }
         .feature-box {
-            width: 25%;
-            padding: 20px;
+            margin: 20px;
+            grid-column: 1fr;
+            width: 200px ; 
+            
             background-color: #f7f7f7;
             border: 1px solid #ddd;
             border-radius: 5px;
+        }
+        .feature-box p{
+            margin: 20px;
         }
         .feature-box img {
             max-width: 100%;
             border-radius: 5px;
         }
+        .div{
+            display: flex;
+                justify-content: center;
+        }
+        
+        
         .contact, .about {
             display: inline-block;
             width: 45%;
@@ -73,19 +86,29 @@
             color: #007BFF;
             text-decoration: none;
         }
-        @media screen and (max-width :425px){
+        @media screen and (max-width :426px){
             .div {
-                display: flex;
-                flex-wrap: nowrap;
-                justify-content: center;
+                flex-wrap: wrap;               
+            }
+            .feature-box{
+                min-width: 150px;
+
             }
             .about {
                 margin-left: 0px;
             }
-            .contact{
+            .contact {
                 margin-right: 0px;
             }
+            .features{
+                justify-content: center;
+
+            }
             
+            .contact, .about {
+                width: fit-content;
+
+            }
         }
     </style>
 </head>
@@ -105,7 +128,7 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mollis tortor ut...</p>
             </div>
             <div class="feature-box">
-                <img src="img4.jpg" alt="Same Experience Everywhere">
+                <img src="img8.jpg" alt="Same Experience Everywhere">
                 <h3>Same Experience Everywhere</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mollis tortor ut...</p>
             </div>
