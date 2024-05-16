@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Web</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: url(img8.jpg) no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        header p {
+            font-size: 1.2em;
+        }
+        header a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #fff;
+            color: #333;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .features {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+            background-color: #222;
+        }
+        .feature-box {
+            width: 25%;
+            padding: 20px;
+            background-color: #f7f7f7;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .feature-box img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+        .contact, .about {
+            display: inline-block;
+            width: 45%;
+            padding: 20px;
+            background-color: #007BFF;
+            color: white;
+            border-radius: 5px;
+            text-align: center;
+            margin: 20px 2.5%;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        footer a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        @media screen and (max-width :425px){
+            .div {
+                display: flex;
+                flex-wrap: nowrap;
+                justify-content: center;
+            }
+            .about {
+                margin-left: 0px;
+            }
+            .contact{
+                margin-right: 0px;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Responsive Web</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vehicula ultricies elit, non sodales lorem maximus eget.</p>
+        <a href="#">Read more</a>
+    </header>
+    <section>
+        <h2>Responsive Web Development</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer aliquam facilisis malesuada metus, dictum varius leo porttitor...</p>
+        <div class="features">
+            <div class="feature-box">
+                <img src="img8.jpg" alt="Why Responsive">
+                <h3>Why Responsive?</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mollis tortor ut...</p>
+            </div>
+            <div class="feature-box">
+                <img src="img4.jpg" alt="Same Experience Everywhere">
+                <h3>Same Experience Everywhere</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mollis tortor ut...</p>
+            </div>
+            <div class="feature-box">
+                <img src="img8.jpg" alt="Improve Your Accessibility">
+                <h3>Improve Your Accessibility</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mollis tortor ut...</p>
+            </div>
+        </div>
+    </section>
+    <section>
+        <h2>Develop Your Website</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam, magnam. Maxime itaque, a...</p>
+        <div class="div">
+            <div class="contact">
+                <h3>Contact Us</h3>
+                <p>Consectetur adipiscing elit. Esse, doloribus possimus voluptatem...</p>
+                <a href="mailto:info@webresponsive.com">info@webresponsive.com</a>
+            </div>
+            <div class="about">
+                <h3>About Us</h3>
+                <p>Esse, doloribus possimus voluptatem, laudantium id incidunt?</p>
+                <a href="http://www.webresponsive.com">www.webresponsive.com</a>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>Lorem ipsum dolor sit.</p>
+        <p>Esse, doloribus possimus voluptatem. <a href="#">Voluptatem</a></p>
+    </footer>
+</body>
+</html>
